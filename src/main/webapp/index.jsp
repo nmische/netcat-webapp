@@ -32,11 +32,11 @@
 
       <form class="form-netcat" role="form" action="netcat" method="post">
         <h2 class="form-netcat-heading">netcat</h2>
-        <p><kbd>$ nc -vz -w 10 &lt;host&gt; &lt;port&gt;</kbd></p>
+        <p><kbd>$ nc -vz -w 1 &lt;host&gt; &lt;port&gt;</kbd></p>
         <label for="inputHost" class="sr-only">Host</label>
-        <input type="host" id="inputHost" class="form-control" placeholder="Host" required autofocus>
+        <input name="host" type="host" id="inputHost" class="form-control" placeholder="Host" required autofocus>
         <label for="inputPort" class="sr-only">Port</label>
-        <input type="port" id="inputPort" class="form-control" placeholder="Port" required>
+        <input name="port" type="port" id="inputPort" class="form-control" placeholder="Port" required>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
       </form>
